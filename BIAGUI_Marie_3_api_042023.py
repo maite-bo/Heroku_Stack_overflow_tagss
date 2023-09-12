@@ -15,7 +15,7 @@ import tensorflow_hub as hub
 import pandas as pd
 from nltk.tokenize import sent_tokenize, word_tokenize
 import pickle as cPickle
-import gzip
+import gzip 
 embed = hub.load("https://tfhub.dev/google/universal-sentence-encoder/4")
 
 # Chargement du modele
@@ -50,7 +50,7 @@ embed = hub.load("https://tfhub.dev/google/universal-sentence-encoder/4")
 # with gzip.open('usemodel','wb') as f:
 #     cPickle.dump(model, f, protocol=-1)
 
-with gzip.open("usemodel", "rb") as f:
+with gzip.open("use_model", "rb") as f:
     model = pickle.load(f)
 
 
